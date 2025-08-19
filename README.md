@@ -12,10 +12,12 @@ Features
 * 🐳 Docker support for easy deployment
   
 Tech Stack
+
 Frontend:
 * React 18 with Vite
 * CSS3 for styling
 * localStorage for persistence
+  
 Backend:
 * Go 1.23
 * SQLite database
@@ -45,10 +47,12 @@ Configuration
 Environment Variables
 Frontend:
 VITE_API_URL=http://localhost:8080  # Backend URL
+
 Backend:
 PORT=8080                           # Server port
 CORS_ORIGIN=http://localhost:5173   # Frontend URL
 DB_PATH=./data/notes.db             # Database file path
+
 Docker Compose
 services:
   backend:

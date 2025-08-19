@@ -10,6 +10,7 @@ Features
 * 📱 Responsive design for all devices
 * 🚀 Fast and lightweight
 * 🐳 Docker support for easy deployment
+  
 Tech Stack
 Frontend:
 * React 18 with Vite
@@ -20,6 +21,7 @@ Backend:
 * SQLite database
 * Gorilla Mux router
 * CORS enabled
+  
 Quick Start
 Using Docker (Recommended)
 git clone https://github.com/yourusername/astronotes.git
@@ -39,6 +41,7 @@ cd Backend
 go mod download
 go run cmd/main.go
 Project Structure
+
 astronotes/
 ├── frontend/                 # React application
 │   ├── src/
@@ -61,6 +64,7 @@ astronotes/
 │   └── go.sum
 ├── docker-compose.yml       # Container orchestration
 └── README.md
+
 API Endpoints
 Method	Endpoint	Description
 GET	/folders	List all folders

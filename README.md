@@ -92,7 +92,7 @@ AstroNotes is a modern note-taking application that prioritizes user privacy and
 **Steps:**
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/astronotes.git
+git clone https://github.com/malavicasurakanti/astronotes.git
 
 # Navigate to project directory
 cd astronotes

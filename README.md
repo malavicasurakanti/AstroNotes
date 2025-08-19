@@ -79,16 +79,8 @@ npm run dev
 # Build for production
 npm run build
 
-# Preview production build
-npm run preview
-Backend Development
-cd backend
-
 # Install dependencies
 go mod download
-
-# Run with hot reload (using air)
-air
 
 # Build binary
 go build -o bin/server cmd/main.go
@@ -115,6 +107,7 @@ CREATE TABLE notes (
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (folder_id) REFERENCES folders(id)
 );
+
 Deployment
 Docker Production
 # Build and start services

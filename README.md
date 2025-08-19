@@ -267,10 +267,6 @@ http://localhost:8080
 # Development
 VITE_API_URL=http://localhost:8080
 
-# Production
-VITE_API_URL=https://your-domain.com/api
-```
-
 #### Backend Configuration
 ```bash
 # Server Configuration
@@ -293,11 +289,11 @@ version: "3.8"
 
 services:
   backend:
-    build: ./go-backend-app
+    build: ./backend
     ports:
       - "8080:8080"
     volumes:
-      - ./go-backend-app/data:/app/data
+      - ./backend/data:/app/data
     environment:
       - CORS_ORIGIN=http://localhost:5173
     restart: unless-stopped
@@ -327,13 +323,6 @@ npm run dev
 
 # Build for production
 npm run build
-
-# Preview production build locally
-npm run preview
-
-# Lint code
-npm run lint
-```
 
 #### Component Architecture
 The frontend follows a component-based architecture:
@@ -402,13 +391,11 @@ go test -v ./...
 
 #### Prerequisites
 - Docker and Docker Compose installed on target server
-- Domain name (optional, for HTTPS)
-- SSL certificates (for production HTTPS)
 
 #### Deployment Steps
 ```bash
 # Clone repository on server
-git clone https://github.com/yourusername/astronotes.git
+git clone https://github.com/malavicasurakanti/astronotes.git
 cd astronotes
 
 # Build and start services
@@ -441,7 +428,7 @@ npm run build
 #### Backend Deployment
 ```bash
 # Build Go binary
-cd go-backend-app
+cd backend
 go build -o bin/server cmd/main.go
 
 # Run binary on server
@@ -464,7 +451,7 @@ We welcome contributions from the community! Here's how you can help:
 ### Development Workflow
 ```bash
 # Fork and clone
-git clone https://github.com/yourusername/astronotes.git
+git clone https://github.com/malavicasurakanti/astronotes.git
 cd astronotes
 
 # Create feature branch
@@ -535,7 +522,7 @@ SOFTWARE.
 - **Documentation**: Check this README and inline code comments
 - **Issues**: Report bugs and request features on GitHub Issues
 - **Discussions**: Join community discussions on GitHub Discussions
-- **Email**: Contact the maintainer at your.email@example.com
+- **Email**: Contact the maintainer at malavica.surakanti@gmail.com
 
 ### Reporting Issues
 When reporting issues, please include:

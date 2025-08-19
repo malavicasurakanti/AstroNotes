@@ -40,41 +40,7 @@ Backend:
 cd Backend
 go mod download
 go run cmd/main.go
-Project Structure
 
-astronotes/
-├── frontend/                 # React application
-│   ├── src/
-│   │   ├── components/      # React components
-│   │   ├── App.jsx          # Main app component
-│   │   └── main.jsx         # Entry point
-│   ├── public/              # Static assets
-│   ├── Dockerfile
-│   └── package.json
-├── backend/          # Go backend
-│   ├── cmd/
-│   │   └── main.go          # Server entry point
-│   ├── internal/            # Internal packages
-│   │   ├── handler/         # HTTP handlers
-│   │   ├── service/         # Business logic
-│   │   └── model/           # Data models
-│   ├── data/                # Database storage
-│   ├── Dockerfile
-│   ├── go.mod
-│   └── go.sum
-├── docker-compose.yml       # Container orchestration
-└── README.md
-
-API Endpoints
-Method	Endpoint	Description
-GET	/folders	List all folders
-POST	/folders	Create new folder
-PUT	/folders/{id}	Update folder
-DELETE	/folders/{id}	Delete folder
-GET	/folders/{id}/notes	Get notes in folder
-POST	/folders/{id}/notes	Create note in folder
-PUT	/notes/{id}	Update note
-DELETE	/notes/{id}	Delete note
 Configuration
 Environment Variables
 Frontend:
